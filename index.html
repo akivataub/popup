@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <style>
+#NO
+{
+    margin-top: 0px;
+    margin-left: 97%;
+    
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    border: solid black;
+    border-width: 1px;
+    cursor: pointer;
+    background-color:aqua;
+}
+#dialog{
+background-color: #fff;
+width: fit-content;
+height: fit-content;
+border: solid black;
+border-width: 1px;
+}
+#button{
+    background-color: blue;
+width: fit-content;
+height: fit-content;
+border: solid black;
+border-width: 1px;
+border-radius: 10%;
+
+}
+    </style>
+</head>
+
+
+<body>
+    <button id="button">show dialog</button>
+<p id="p"></p>
+    <dialog id="dialog">
+        <button id="NO">x</button><hr id="hr">
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt doloremque autem ipsam praesentium et
+            dicta omnis laborum veritatis libero nostrum fuga cupiditate laboriosam ipsum sit officiis corporis cum,
+            recusandae maiores labore temporibus reiciendis enim, non asperiores! Iste dignissimos at incidunt facere
+            molestias quaerat deleniti a nesciunt excepturi omnis, ullam sunt explicabo, unde maxime ratione est. Magni
+            blanditiis numquam assumenda quia corrupti possimus, voluptate iusto quidem deserunt veritatis. Nisi,
+            laborum necessitatibus. Sapiente, odit? Nemo, perspiciatis natus veritatis nesciunt excepturi ducimus ex
+            dolorum. Ea facilis nam impedit praesentium modi tempore odio nobis fugiat illo iusto, maiores aliquam
+            veniam repudiandae assumenda asperiores!</p>
+            
+    </dialog>
+    <script>
+
+
+
+
+
+        const dialog = document.querySelector('dialog')
+        const button = document.querySelector('button')
+        const done = document.getElementById('NO')
+        const p = document.getElementById('p')
+
+
+        button.addEventListener('click', function () {
+            dialog.showModal()
+        p.innerText = 'modal open'
+        
+        })
+        NO.addEventListener('click', function () {
+            dialog.close()
+            p.innerText = ''
+            
+        })
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
